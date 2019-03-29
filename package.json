@@ -1,16 +1,16 @@
 {
-  "_from": "cordova-admob-plus",
-  "_id": "cordova-admob-plus@0.25.1",
+  "_from": "cordova-plugin-super-admob",
+  "_id": "cordova-plugin-super-admob@0.25.1",
   "_inBundle": false,
   "_integrity": "sha512-CHexzPZYDnD9BPP4Fx6GB7BqxKZVeEeT+9Xb+lRLvVi186JtX4Xr8uCrT0m9fx3OHJE0KD9feuEj93FvDKTLVw==",
-  "_location": "/cordova-admob-plus",
+  "_location": "/cordova-plugin-super-admob",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
     "registry": true,
-    "raw": "cordova-admob-plus",
-    "name": "cordova-admob-plus",
-    "escapedName": "cordova-admob-plus",
+    "raw": "cordova-plugin-super-admob",
+    "name": "cordova-plugin-super-admob",
+    "escapedName": "cordova-plugin-super-admob",
     "rawSpec": "",
     "saveSpec": null,
     "fetchSpec": "latest"
@@ -19,9 +19,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-admob-plus/-/cordova-admob-plus-0.25.1.tgz",
   "_shasum": "e1b10500b1f495a086137975ac885abcc5cb12ab",
-  "_spec": "cordova-admob-plus",
+  "_spec": "cordova-plugin-super-admob",
   "_where": "/Users/ziad/Drive - ziad@galaxee.io/Projets/Jeux/Lexique/mobile/cordova",
   "author": {
     "name": "Ratson"
@@ -31,7 +30,7 @@
   },
   "bundleDependencies": false,
   "cordova": {
-    "id": "cordova-admob-plus",
+    "id": "cordova-plugin-super-admob",
     "platforms": [
       "android",
       "ios"
@@ -92,10 +91,10 @@
   ],
   "license": "MIT",
   "main": "www/admob.js",
-  "name": "cordova-admob-plus",
+  "name": "cordova-plugin-super-admob",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/admob-plus/admob-plus.git"
+    "url": "git+https://github.com/ziadsarour/cordova-plugin-super-admob.git"
   },
   "scripts": {
     "prepare": "run-s prepare:*",
