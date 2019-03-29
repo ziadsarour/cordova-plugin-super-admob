@@ -1,8 +1,7 @@
 {
   "_from": "cordova-plugin-super-admob",
-  "_id": "cordova-plugin-super-admob@0.25.1",
+  "_id": "cordova-plugin-super-admob",
   "_inBundle": false,
-  "_integrity": "sha512-CHexzPZYDnD9BPP4Fx6GB7BqxKZVeEeT+9Xb+lRLvVi186JtX4Xr8uCrT0m9fx3OHJE0KD9feuEj93FvDKTLVw==",
   "_location": "/cordova-plugin-super-admob",
   "_phantomChildren": {},
   "_requested": {
@@ -24,9 +23,6 @@
   "_where": "/Users/ziad/Drive - ziad@galaxee.io/Projets/Jeux/Lexique/mobile/cordova",
   "author": {
     "name": "Ratson"
-  },
-  "bugs": {
-    "url": "https://github.com/admob-plus/admob-plus/issues"
   },
   "bundleDependencies": false,
   "cordova": {
@@ -72,23 +68,6 @@
     "ts",
     "www"
   ],
-  "gitHead": "de7ced812db0c302af7104660fa8d96f4e59a8d9",
-  "homepage": "https://admob-plus.github.io",
-  "keywords": [
-    "cordova",
-    "plugin",
-    "admob",
-    "plus",
-    "ecosystem:cordova",
-    "cordova-plugin-admob",
-    "cordova-admob",
-    "cordova-android",
-    "cordova-ios",
-    "google",
-    "suite",
-    "admob-free",
-    "admobpro"
-  ],
   "license": "MIT",
   "main": "www/admob.js",
   "name": "cordova-plugin-super-admob",
@@ -96,12 +75,6 @@
     "type": "git",
     "url": "git+https://github.com/ziadsarour/cordova-plugin-super-admob.git"
   },
-  "scripts": {
-    "prepare": "run-s prepare:*",
-    "prepare:build": "rollup -c",
-    "prepare:clean": "del src/.DS_Store src/**/.DS_Store",
-    "prepare:gen": "ts-node scripts/gen"
-  },
   "typings": "www/admob.d.ts",
-  "version": "0.25.1"
+  "version": "0.0.1"
 }
