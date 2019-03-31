@@ -241,16 +241,10 @@ class AMSPlugin: CDVPlugin {
             default: break
             }
         }
-        guard let adSizeDict = opts.value(forKey: "size") as? NSDictionary,
-            let width = adSizeDict.value(forKey: "width") as? Int,
-            let height = adSizeDict.value(forKey: "height") as? Int
-            else {
-                if UIDevice.current.orientation.isPortrait {
-                    return kGADAdSizeSmartBannerPortrait
-                } else {
-                    return kGADAdSizeSmartBannerLandscape
-                }
-        }
-        return GADAdSizeFromCGSize(CGSize(width: width, height: height))
+        let adSizeDict = opts.value(forKey: "size") as? NSDictionary
+        return GADAdSizeFromCGSize(CGSize(
+            width: adSizeDict?.value(forKey: "width") as! Int,
+            height: adSizeDict?.value(forKey: "height") as! Int
+        ))
     }
 }
