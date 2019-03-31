@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-super-admon",
+  "name": "cordova-plugin-super-admob",
   "version": "0.25.1",
   "description": "Trustable Google AdMob Cordova Plugin",
   "main": "www/admob.js",
