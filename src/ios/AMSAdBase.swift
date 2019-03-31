@@ -22,11 +22,11 @@ class AMSAdBase: NSObject {
         self.adUnitID = nil
     }
 
-    func fitAds() {
-        for (_, ad) in AMSAdBase.ads {
-            if let banner = ad as? AMSBanner {
-                banner.resizeWebView()
-            }
-        }
-    }
+//    func fitAds() {
+//        for (_, ad) in AMSAdBase.ads {
+//            if let banner = ad as? AMSBanner {
+//                banner.resizeWebView()
+//            }
+//        }
+//    }
 }

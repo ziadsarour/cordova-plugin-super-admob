@@ -69,7 +69,7 @@ class AMSPlugin: CDVPlugin {
             let id = opts.value(forKey: "id") as? Int,
             let adUnitID = opts.value(forKey: "adUnitID") as? String,
             let position = opts.value(forKey: "position") as? String,
-            let offset = opts.value(forKey: "offset") as! NSDictionary,
+            let offset = opts.value(forKey: "offset") as? Dictionary<String, CGFloat>,
             var banner = AMSAdBase.ads[id] as? AMSBanner?
             else {
                 let result = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: false)

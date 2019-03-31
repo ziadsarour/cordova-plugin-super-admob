@@ -36,7 +36,7 @@ class AMSInterstitial: AMSAdBase, GADInterstitialDelegate {
     @objc
     func interstitialDidDismissScreen(_ adInterstitial: GADInterstitial) {
         plugin.emit(eventType: AMSEvents.interstitialClose)
-        fitAds()
+//        fitAds()
     }
 
     @objc

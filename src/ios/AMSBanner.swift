@@ -2,18 +2,18 @@ class AMSBanner: AMSAdBase, GADBannerViewDelegate {
     var bannerView: GADBannerView!
     var adSize: GADAdSize!
     var position: String!
-    var offset: NSDictionary
+    var offset: Dictionary<String, CGFloat>
 
     var view: UIView {
         return self.plugin.viewController.view
     }
 
-    init(id: Int, adUnitID: String, adSize: GADAdSize, position: String, offset: NSDictionary) {
-        super.init(id: id, adUnitID: adUnitID)
-
+    init(id: Int, adUnitID: String, adSize: GADAdSize, position: String, offset: Dictionary<String, CGFloat>) {
         self.adSize = adSize
         self.position = position
         self.offset = offset
+
+        super.init(id: id, adUnitID: adUnitID)
     }
 
     deinit {
@@ -54,7 +54,7 @@ class AMSBanner: AMSAdBase, GADBannerViewDelegate {
                                               toItem: self.plugin.webView.superview,
                                               attribute: .centerX,
                                               multiplier: 1,
-                                              constant: self.offset.value(forKey: "x")))
+                                              constant: self.offset["x"]!))
         if position == "top" {
             self.plugin.webView.superview?.addConstraint(NSLayoutConstraint(item: bannerView,
                                                   attribute: .top,
@@ -62,7 +62,7 @@ class AMSBanner: AMSAdBase, GADBannerViewDelegate {
                                                   toItem: self.plugin.webView.superview,
                                                   attribute: .top,
                                                   multiplier: 1,
-                                                  constant: self.offset.value(forKey: "y")))
+                                                  constant: self.offset["y"]!))
         } else {
             self.plugin.webView.superview?.addConstraint(NSLayoutConstraint(item: bannerView,
                                                   attribute: .bottom,
@@ -70,7 +70,7 @@ class AMSBanner: AMSAdBase, GADBannerViewDelegate {
                                                   toItem: self.plugin.webView.superview,
                                                   attribute: .bottom,
                                                   multiplier: 1,
-                                                  constant: self.offset.value(forKey: "y")))
+                                                  constant: self.offset["y"]!))
         }
     }
 

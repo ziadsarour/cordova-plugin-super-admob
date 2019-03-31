@@ -39,7 +39,7 @@ class AMSRewardVideo: AMSAdBase, GADRewardBasedVideoAdDelegate {
 
     func rewardBasedVideoAdDidClose(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
         plugin.emit(eventType: AMSEvents.rewardVideoClose)
-        fitAds()
+//        fitAds()
     }
 
     func rewardBasedVideoAdDidStartPlaying(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {
