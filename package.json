@@ -4,12 +4,6 @@
   "description": "Trustable Google AdMob Cordova Plugin",
   "main": "www/admob.js",
   "typings": "www/admob.d.ts",
-  "scripts": {
-    "prepare": "run-s prepare:*",
-    "prepare:gen": "ts-node scripts/gen",
-    "prepare:build": "rollup -c",
-    "prepare:clean": "del src/.DS_Store src/**/.DS_Store"
-  },
   "devDependencies": {
     "@types/cordova": "^0.0.34",
     "@types/execa": "^0.9.0",
@@ -44,23 +38,8 @@
     "ts",
     "www"
   ],
-  "keywords": [
-    "cordova",
-    "plugin",
-    "admob",
-    "plus",
-    "ecosystem:cordova",
-    "cordova-plugin-admob",
-    "cordova-admob",
-    "cordova-android",
-    "cordova-ios",
-    "google",
-    "suite",
-    "admob-free",
-    "admobpro"
-  ],
   "cordova": {
-    "id": "cordova-plugin-super-admon",
+    "id": "cordova-plugin-super-admob",
     "platforms": [
       "android",
       "ios"
