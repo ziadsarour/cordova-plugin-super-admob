@@ -6,12 +6,6 @@
     <js-module name="AdMob" src="www/admob.js">
         <clobbers target="admob" />
     </js-module>
-    <js-module name="AdMobBanner" src="www/banner.js"></js-module>
-    <js-module name="AdMobBase" src="www/base.js"></js-module>
-    <js-module name="AdMobCore" src="www/core.js"></js-module>
-    <js-module name="AdMobInterstitial" src="www/interstitial.js"></js-module>
-    <js-module name="AdMobRewardVideo" src="www/reward-video.js"></js-module>
-    <js-module name="AdMobState" src="www/state.js"></js-module>
 
     <engines>
         <engine name="cordova" version=">=7.0.0" />

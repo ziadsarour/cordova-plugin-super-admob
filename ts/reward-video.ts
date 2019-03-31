@@ -1,10 +1,9 @@
 import { IAdRequest } from './core'
+import { Events, NativeActions } from './constants'
 
 import {
   AdBase,
-  Events,
   execAsync,
-  NativeActions,
   TestIds,
   waitEvent,
 } from './base'

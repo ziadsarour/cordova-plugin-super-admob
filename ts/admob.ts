@@ -1,7 +1,8 @@
 import { exec } from 'cordova'
 
 import Banner from './banner'
-import { execAsync, fireDocumentEvent, NativeActions } from './base'
+import { execAsync, fireDocumentEvent } from './base'
+import { NativeActions } from './constants'
 import Interstitial from './interstitial'
 import RewardVideo from './reward-video'
 import AdMobState from './state'

@@ -1,9 +1,8 @@
-import { AdUnitIDOption, Events, NativeActions } from './core'
+import { AdUnitIDOption } from './core'
+import { NativeActions } from './constants'
 import { exec } from 'cordova'
 
 import AdMobState from './state'
-
-export { AdUnitIDOption, Events, NativeActions }
 
 export const enum Platforms {
   android = 'android',

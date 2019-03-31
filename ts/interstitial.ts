@@ -1,12 +1,11 @@
 import {
   AdBase,
-  Events,
   execAsync,
-  NativeActions,
   TestIds,
   waitEvent,
 } from './base'
 
+import { Events, NativeActions } from './constants'
 import { IAdRequest } from './core'
 
 const AD_ID = 2
