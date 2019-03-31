@@ -1,4 +1,4 @@
-import { IAdRequest } from '@admob-plus/core'
+import { IAdRequest } from './core'
 
 import {
   AdBase,

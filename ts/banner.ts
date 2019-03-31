@@ -1,4 +1,4 @@
-import { AdSizeType, AdUnitIDOption, IBannerRequest } from '@admob-plus/core'
+import { AdSizeType, AdUnitIDOption, IBannerRequest } from './core'
 
 import { AdBase, execAsync, NativeActions, TestIds } from './base'
 
@@ -8,11 +8,15 @@ export default class Banner extends AdBase {
 
   public show(opts: IBannerRequest) {
     const adUnitID = this.resolveAdUnitID(opts.id)
+    opts.offset = opts.offset || {};
+    opts.offset.x = opts.offset.x || 0;
+    opts.offset.y = opts.offset.y || 0;
+
     return execAsync(NativeActions.banner_show, [
       {
-        position: 'bottom',
-        size: AdSizeType.SMART_BANNER,
-        ...opts,
+        position: opts.position || 'bottom',
+        size: opts.size || AdSizeType.SMART_BANNER,
+        offset: opts.offset,
         adUnitID,
         id: this.state.getAdId(adUnitID),
       },

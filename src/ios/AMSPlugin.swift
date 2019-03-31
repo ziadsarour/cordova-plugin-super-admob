@@ -69,6 +69,7 @@ class AMSPlugin: CDVPlugin {
             let id = opts.value(forKey: "id") as? Int,
             let adUnitID = opts.value(forKey: "adUnitID") as? String,
             let position = opts.value(forKey: "position") as? String,
+            let offset = opts.value(forKey: "offset") as! NSDictionary,
             var banner = AMSAdBase.ads[id] as? AMSBanner?
             else {
                 let result = CDVPluginResult(status: CDVCommandStatus_ERROR, messageAs: false)
@@ -77,7 +78,13 @@ class AMSPlugin: CDVPlugin {
         }
         if banner == nil {
             let adSize = getAdSize(opts)
-            banner = AMSBanner(id: id, adUnitID: adUnitID, adSize: adSize, position: position)
+            banner = AMSBanner(
+                id: id,
+                adUnitID: adUnitID,
+                adSize: adSize,
+                position: position,
+                offset: offset
+            )
         }
         banner!.show(request: createGADRequest(opts))
 

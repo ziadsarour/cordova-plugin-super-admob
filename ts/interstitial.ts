@@ -7,7 +7,7 @@ import {
   waitEvent,
 } from './base'
 
-import { IAdRequest } from '@admob-plus/core'
+import { IAdRequest } from './core'
 
 const AD_ID = 2
 
