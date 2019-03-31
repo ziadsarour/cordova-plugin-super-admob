@@ -1,7 +1,7 @@
-import { AdSizeType, AdUnitIDOption, IBannerRequest } from './core'
+import { AdUnitIDOption, IBannerRequest } from './core'
 
 import { AdBase, execAsync, TestIds } from './base'
-import { NativeActions } from './constants'
+import { AdSizeType, NativeActions } from './constants'
 
 export default class Banner extends AdBase {
   protected testIdForAndroid = TestIds.banner_android

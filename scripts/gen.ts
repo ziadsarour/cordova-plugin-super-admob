@@ -63,7 +63,6 @@ const AdSizeTypes = [
   'MEDIUM_RECTANGLE',
   'FULL_BANNER',
   'LEADERBOARD',
-  'SMART_BANNER',
 ]
 
 function buildActionsJava(): string {
