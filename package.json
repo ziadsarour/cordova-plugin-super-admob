@@ -11,7 +11,6 @@
     "prepare:clean": "del src/.DS_Store src/**/.DS_Store"
   },
   "devDependencies": {
-    "@admob-plus/core": "^0.7.0",
     "@types/cordova": "^0.0.34",
     "@types/execa": "^0.9.0",
     "@types/lodash": "^4.14.119",
@@ -33,7 +32,10 @@
   },
   "author": "Ratson",
   "license": "MIT",
-  "repository": "ziadsarour/cordova-plugin-super-admob",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziadsarour/cordova-plugin-super-admob.git"
+  },
   "files": [
     "*.ts",
     "*.md",
