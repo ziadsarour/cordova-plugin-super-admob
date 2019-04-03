@@ -48,5 +48,4 @@ export enum AdSizeType {
   MEDIUM_RECTANGLE,
   FULL_BANNER,
   LEADERBOARD,
-  SMART_BANNER,
 }

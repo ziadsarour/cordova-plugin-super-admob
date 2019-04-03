@@ -79,16 +79,6 @@ function __generator(thisArg, body) {
     }
 }
 
-var AdSizeType;
-(function (AdSizeType) {
-    AdSizeType[AdSizeType["BANNER"] = 0] = "BANNER";
-    AdSizeType[AdSizeType["LARGE_BANNER"] = 1] = "LARGE_BANNER";
-    AdSizeType[AdSizeType["MEDIUM_RECTANGLE"] = 2] = "MEDIUM_RECTANGLE";
-    AdSizeType[AdSizeType["FULL_BANNER"] = 3] = "FULL_BANNER";
-    AdSizeType[AdSizeType["LEADERBOARD"] = 4] = "LEADERBOARD";
-    AdSizeType[AdSizeType["SMART_BANNER"] = 5] = "SMART_BANNER";
-})(AdSizeType || (AdSizeType = {}));
-
 function execAsync(action, args) {
     return new Promise(function (resolve, reject) {
         cordova$1.exec(resolve, reject, "AdMob" /* Service */, action, args);
@@ -151,6 +141,15 @@ var AdBase = /** @class */ (function () {
     return AdBase;
 }());
 
+var AdSizeType;
+(function (AdSizeType) {
+    AdSizeType[AdSizeType["BANNER"] = 0] = "BANNER";
+    AdSizeType[AdSizeType["LARGE_BANNER"] = 1] = "LARGE_BANNER";
+    AdSizeType[AdSizeType["MEDIUM_RECTANGLE"] = 2] = "MEDIUM_RECTANGLE";
+    AdSizeType[AdSizeType["FULL_BANNER"] = 3] = "FULL_BANNER";
+    AdSizeType[AdSizeType["LEADERBOARD"] = 4] = "LEADERBOARD";
+})(AdSizeType || (AdSizeType = {}));
+
 var Banner = /** @class */ (function (_super) {
     __extends(Banner, _super);
     function Banner() {
@@ -167,7 +166,7 @@ var Banner = /** @class */ (function (_super) {
         return execAsync("banner_show" /* banner_show */, [
             {
                 position: opts.position || 'bottom',
-                size: opts.size || AdSizeType.SMART_BANNER,
+                size: opts.size || AdSizeType.BANNER,
                 offset: opts.offset,
                 adUnitID: adUnitID,
                 id: this.state.getAdId(adUnitID),

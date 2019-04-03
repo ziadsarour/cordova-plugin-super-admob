@@ -44,6 +44,5 @@ export declare enum AdSizeType {
     LARGE_BANNER = 1,
     MEDIUM_RECTANGLE = 2,
     FULL_BANNER = 3,
-    LEADERBOARD = 4,
-    SMART_BANNER = 5
+    LEADERBOARD = 4
 }
